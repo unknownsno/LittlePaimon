@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "LittlePaimonGuild"
+version = "0.1.0"
+description = "LittlePaimonGuild"
+authors = []
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "ali"
+default = true
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nonebot2 = "^2.0.0-beta.5"
+nonebot-adapter-qqguild = "^0.1.1"
+
+[tool.poetry.dev-dependencies]
+nb-cli = "^0.6.7"
+
+[tool.nonebot]
+plugins = []
+plugin_dirs = []
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
